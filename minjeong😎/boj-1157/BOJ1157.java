@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex01 {
+public class BOJ1157 {
 
 	public static void main(String[] args) {
 
