@@ -11,7 +11,7 @@ public class Ex01 {
 		char[] charArray = line.toLowerCase().toCharArray();
 		
 		int[] cnt = new int[26];
-		
+		// hello
 		int max = 0;
 		boolean equal = false;
 				
