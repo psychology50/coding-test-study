@@ -64,8 +64,10 @@ public class BOJ20546 {
 		
 		if (BNP_result > TIMING_result) {
 			System.out.println("BNP");
-		} else {
+		} else if (BNP_result < TIMING_result) {
 			System.out.println("TIMING");
+		} else {
+			System.out.println("SAMESAME");
 		}
 
 	}
