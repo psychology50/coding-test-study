@@ -6,7 +6,7 @@ stockprice = list(map(int,sys.stdin.readline().split()))
 def J():
     count = 0
     nowcash = n
-    #global jun_assets
+    global jun_assets
 
     for stock in stockprice:
         count += nowcash // stock #남은 돈
@@ -15,14 +15,15 @@ def J():
         if nowcash == 0:
             break
 
+    jun_assets = nowcash + count * stockprice[-1]
+
     return nowcash, count
-        
 
 def S():
     count_stock = 0
     nowcash = n
-    #global sung_assets
-    
+    global sung_assets
+
     for i in range(len(stockprice)-4):
         if(stockprice[i] < stockprice[i+1] < stockprice[i+2] < stockprice[i+3]):
             nowcash += count_stock * stockprice[i+3]
@@ -30,13 +31,13 @@ def S():
         elif(stockprice[i] > stockprice[i+1] > stockprice[i+2] > stockprice[i+3]):
             count_stock += nowcash // stockprice[i+3]
             nowcash = count_stock % stockprice[i+3]
+        
+    sung_assets = nowcash + count_stock * stockprice[-1]
 
     return count_stock, nowcash
 
-jun_money, jun_stock = J()
-jun_assets = jun_money * jun_stock * stockprice[-1]
-sung_money, sung_stock = S()
-sung_assets = sung_money * sung_stock * stockprice[-1]
+J()
+S()
 
 if jun_assets > sung_assets:
     print("BNP")
@@ -46,8 +47,3 @@ elif jun_assets < sung_assets:
 
 else:
     print("SAMESAME")
-
-
-
-
-            
