@@ -22,9 +22,7 @@ public class BOJ20546 {
 		}
 		
 		for (int i = 0; i < 14; i++) {
-			
-			System.out.println(String.format("%d, cost[%d]: %d, BNP_balance: %d, BNP_cnt: %d, Timing_balance: %d, Timing_cnt: %d, up_cnt: %d, down_cnt: %d, TIMING_balance/cost[i]: %d", i, i, cost[i], BNP_balance, BNP_cnt, TIMING_balance, TIMING_cnt, up_cnt, down_cnt, TIMING_balance/cost[i]));
-			
+					
 			if (BNP_balance/cost[i] > 0) {
 				int buying = BNP_balance/cost[i];
 				BNP_cnt = BNP_cnt + BNP_balance/cost[i];
@@ -53,9 +51,7 @@ public class BOJ20546 {
             if (i != 13 && cost[i] >= cost[i+1]) {
 				up_cnt = 0;
 			}
-            
-			System.out.println(String.format("%d, cost[%d]: %d, BNP_balance: %d, BNP_cnt: %d, Timing_balance: %d, Timing_cnt: %d, up_cnt: %d, down_cnt: %d, TIMING_balance/cost[i]: %d", i, i, cost[i], BNP_balance, BNP_cnt, TIMING_balance, TIMING_cnt, up_cnt, down_cnt, TIMING_balance/cost[i]));
-
+            		
 		
 		}
 		
