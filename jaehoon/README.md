@@ -2,4 +2,4 @@
 
 ## 블로그 주소
 
-[https://dekoms-coding.tistory.com/manage/posts/]https://dekoms-coding.tistory.com/manage/posts/
+https://dekoms-coding.tistory.com/manage/posts/
