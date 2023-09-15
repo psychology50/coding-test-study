@@ -11,17 +11,17 @@ public class BOJ14467 {
 		int cnt = 0;
 		
 		for (int i = 0; i < observation; i++) {
-			int cow_num = in.nextInt();
+			int n = in.nextInt();
 			int location = in.nextInt();
 						
-			if (mark[cow_num-1] == false) {
-				mark[cow_num-1] = true;
-				cows[cow_num-1] = location;
+			if (mark[n-1] == false) {
+				mark[n-1] = true;
+				cows[n-1] = location;
 			}
 			
-			else if (cows[cow_num-1] != location) {
+			else if (cows[n-1] != location) {
 				cnt++;
-				cows[cow_num-1] = location;
+				cows[n-1] = location;
 			}
 			
 		}
