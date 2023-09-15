@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class BOJ20546 {
 
@@ -13,8 +14,10 @@ public class BOJ20546 {
 
 		int[] cost = new int[14];
 
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
 		for (int i = 0; i < 14; i++) {
-			cost[i] = Integer.parseInt(br.readLine());
+			cost[i] = Integer.parseInt(st.nextToken());
 		}
 
 		int bnpResult = BNP(bnpBalance, cost);
