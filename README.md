@@ -7,10 +7,11 @@
 - [양재서](https://github.com/psychology50) : C++
 - [강병준](https://github.com/BangDori) : Python
 - [이진우](https://github.com/jinlee1703) : Java
-- [윤금재](https://github.com/YoonKeumJae) : Javascript
 - [권소희](https://github.com/soooheeee) : Python
 - [변민정](https://github.com/byeon22) : Java
 - [아우신얀](https://github.com/yanni13) : Python
+- [박다원](https://github.com/daxx0ne) : Java
+- [이재훈](https://github.com/dekoms) : Java
 
 <br/>
 
