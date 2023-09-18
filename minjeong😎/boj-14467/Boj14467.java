@@ -1,27 +1,32 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class BOJ14467 {
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		int observation = in.nextInt();
+	public static void main(String[] args) throws NumberFormatException, IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int observation = Integer.parseInt(br.readLine());
 				
 		int[] cows = new int[10];
-		boolean[] mark = new boolean[10]; // false∑Œ √ ±‚»≠ µ 
+		boolean[] mark = new boolean[10]; // falseÎ°ú Ï¥àÍ∏∞Ìôî Îê®
 		
 		int cnt = 0;
 		
 		for (int i = 0; i < observation; i++) {
-			int cow_num = in.nextInt();
-			int location = in.nextInt();
+			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+			int n = Integer.parseInt(st.nextToken());
+			int location = Integer.parseInt(st.nextToken());
 						
-			if (mark[cow_num-1] == false) {
-				mark[cow_num-1] = true;
-				cows[cow_num-1] = location;
+			if (mark[n-1] == false) {
+				mark[n-1] = true;
+				cows[n-1] = location;
 			}
 			
-			else if (cows[cow_num-1] != location) {
+			else if (cows[n-1] != location) {
 				cnt++;
-				cows[cow_num-1] = location;
+				cows[n-1] = location;
 			}
 			
 		}
