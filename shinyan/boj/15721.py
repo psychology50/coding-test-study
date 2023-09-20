@@ -9,7 +9,7 @@ b = d = 1 #번데기 외친 횟수
 turncount = 0 #턴 횟수
 
 for _ in range(T): #구하고자 하는 번째가 될 때까지 반복
-    #thisturn = b #항상 뻔 먼저 시작하니까
+    thisturn = b #항상 뻔 먼저 시작하니까
     turncount += 1 #턴횟수 카운트 시작
 
     for _ in range(2): #처음에 시작할 때 뻔-데기-뻔-데기 후에 시작됨
@@ -27,7 +27,6 @@ for _ in range(T): #구하고자 하는 번째가 될 때까지 반복
         d+=1
 
     if  T <= b:
-        print("=====")
         print(bundegi.index((T,n)) % A)
         break
 
