@@ -10,24 +10,23 @@ class Main {
         N = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
 
-        int target = 0;
-        int len = 1;
-        int cnt = 9;
+        long target = 0;
+        long len = 1;
+        long cnt = 9;
 
-        while (K > cnt * len) {
+        while (K > (len * cnt)) {
             K -= (len * cnt);
             target += cnt;
-
             len++;
             cnt *= 10;
         }
 
-        target = (target + 1) + (K -  1) / len;
+        target += ((K - 1) / len) + 1;
         
         if (target > N) {
 			System.out.println(-1);
 		} else {
-			int idx = (int)((K-1)%len);
+			int idx = (int) ((K-1) % len);
 			System.out.println(String.valueOf(target).charAt(idx));
 		}
 
