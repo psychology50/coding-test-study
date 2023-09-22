@@ -30,11 +30,11 @@
 ## 문제 풀이 현황
 |이름|문제|
 |:---:|:---|
-|강병준|[21608](https://www.acmicpc.net/problem/21608) |
+|강병준|[21608](https://www.acmicpc.net/problem/21608) [2054](https://www.acmicpc.net/problem/2504)|
 |이진우|[1790](https://www.acmicpc.net/problem/1790) |
 |권소희|[15721](https://www.acmicpc.net/problem/15721) |
 |변민정|[15721](https://www.acmicpc.net/problem/15721) |
-|아우신얀||
+|아우신얀|[15721](https://www.acmicpc.net/problem/15721) |
 |박다원||
 |이재훈||
 
