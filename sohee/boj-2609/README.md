@@ -32,3 +32,5 @@ lcm(a,b)를 하면,
 def lcm(a,b):
     return  a*b // gcd(a,b)
 이런 식으로 구현이 된다.
+
+https://developeryuseon.tistory.com/99
