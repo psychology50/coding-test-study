@@ -1,15 +1,12 @@
 package baekjoon;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 class Person {
 	private int money;
 	private int[] chart;
 	private int count;
-
-	public Person() {
-
-	}
 
 	public Person(int money, int[] chart) {
 		this.money = money;
@@ -42,6 +39,11 @@ class Person {
 			if (day == 15) {
 				break;
 			}
+			if (money < chart[day - 1]) {
+				day++;
+				continue;
+			}
+
 			while (!(money < chart[day - 1] * mul)) {
 				mul++;
 			}
@@ -64,6 +66,10 @@ class Person {
 				break;
 			}
 			if (day < 4) {
+				day++;
+				continue;
+			}
+			if (money < chart[day - 1]) {
 				day++;
 				continue;
 			}
@@ -109,13 +115,14 @@ class Person {
 
 public class S20546 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int money = sc.nextInt();
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int money = Integer.parseInt(br.readLine());
+		String[] input = br.readLine().split(" ");
 
 		int[] chart = new int[14];
 		for (int i = 0; i < chart.length; i++) {
-			chart[i] = sc.nextInt();
+			chart[i] = Integer.parseInt(input[i]);
 		}
 
 		Person junhyeon = new Person(money, chart);
@@ -129,8 +136,6 @@ public class S20546 {
 			System.out.println("TIMING");
 		else
 			System.out.println("SAMESAME");
-
-		sc.close();
 
 	}
 
