@@ -3,3 +3,4 @@
 ## 블로그 주소
 
 https://dekoms-coding.tistory.com/manage/posts/
+블로그 글 공개로 바꿔뒀습니다!
