@@ -9,7 +9,7 @@
 - [이진우](https://github.com/jinlee1703) : Java
 - [권소희](https://github.com/soooheeee) : Python
 - [변민정](https://github.com/byeon22) : Java
-- [아우신얀](https://github.com/yanni13) : Python
+- [아우신얀](https://github.com/yanni13) : Swift
 - [박다원](https://github.com/daxx0ne) : Java
 - [이재훈](https://github.com/dekoms) : Java
 
