@@ -9,7 +9,7 @@
 - [이진우](https://github.com/jinlee1703) : Java
 - [권소희](https://github.com/soooheeee) : Python
 - [변민정](https://github.com/byeon22) : Java
-- [아우신얀](https://github.com/yanni13) : Python
+- [아우신얀](https://github.com/yanni13) : Swift
 - [박다원](https://github.com/daxx0ne) : Java
 - [이재훈](https://github.com/dekoms) : Java
 
@@ -30,11 +30,11 @@
 ## 문제 풀이 현황
 |이름|문제|
 |:---:|:---|
-|강병준|[21608](https://www.acmicpc.net/problem/21608) [2054](https://www.acmicpc.net/problem/2504)|
+|강병준|[21608](https://www.acmicpc.net/problem/21608) [2054](https://www.acmicpc.net/problem/2504) [14500](https://www.acmicpc.net/problem/14500)|
 |이진우|[1790](https://www.acmicpc.net/problem/1790) |
-|권소희|[15721](https://www.acmicpc.net/problem/15721) |
+|권소희|[15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609) |
 |변민정|[15721](https://www.acmicpc.net/problem/15721) |
-|아우신얀|[15721](https://www.acmicpc.net/problem/15721) |
+|아우신얀|[15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609) |
 |박다원||
 |이재훈||
 
