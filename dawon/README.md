@@ -7,3 +7,4 @@
 |날짜|문제 풀이 및 정리|
 |:---:|:---:|
 |9/20|[boj-14467](https://daxx0ne.tistory.com/204)|
+|9/26|[boj-2460](https://daxx0ne.tistory.com/206)|
