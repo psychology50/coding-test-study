@@ -1,18 +1,16 @@
 package baekjoon;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class S1913 {
 
-	public static void main(String[] args) throws Exception{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-		int n = Integer.parseInt(br.readLine());
-		int findNum = Integer.parseInt(br.readLine());
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int n = sc.nextInt();
+		int findNum = sc.nextInt();
 
 		int[][] box = new int[n][n];
-
 		// 위 오른쪽 아래 왼쪽
 		int[] dx = { -1, 0, 1, 0 };
 		int[] dy = { 0, 1, 0, -1 };
@@ -21,26 +19,10 @@ public class S1913 {
 		int currentY = n / 2;
 
 		int cnt = 1;
-		int checkRound = 2;
-		int direction = 2;
-		while (true) {
-			if (cnt >= n * n)
-				break;
-
-			if (cnt == 1) {
-				box[currentX][currentY] = cnt;
-				currentX += dx[0];
-				currentY += dy[0];
-				cnt++;
-				continue;
-			}
-			if (cnt == 2) {
-				box[currentX][currentY] = cnt;
-				currentX += dx[1];
-				currentY += dy[1];
-				cnt++;
-				continue;
-			}
+		int checkRound = 1;
+		int direction = 0;
+		boolean isStay = true;
+		for (; cnt <= n * n;) {
 
 			direction %= 4;
 
@@ -78,28 +60,27 @@ public class S1913 {
 				}
 				break;
 			}
+			direction++;
 
-			if (cnt % 2 == 1) {
-				direction++;
-				checkRound++;
+			if (isStay) {
+				isStay = false;
+				continue;
 			}
-			for (int i = 1; i < n; i++)
-				if ((cnt - (checkRound - 1)) == 3 + 2 * (i + 1) || (cnt - (checkRound - 1)) == 3)
-					checkRound--;
+
+			checkRound++;
+			isStay = true;
 
 		}
-		box[0][0] = n * n;
 
-		
 		StringBuilder stringBuilder = new StringBuilder();
-		
+
 		int resX = -1;
 		int resY = -1;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (findNum == box[i][j]) {
-					resX = i;
-					resY = j;
+					resX = i + 1;
+					resY = j + 1;
 				}
 				stringBuilder.append(box[i][j] + " ");
 			}
@@ -107,7 +88,8 @@ public class S1913 {
 		}
 		stringBuilder.append(resX + " " + resY);
 		System.out.println(stringBuilder.toString());
-		
+
+		sc.close();
 
 	}
 
