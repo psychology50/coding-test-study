@@ -35,7 +35,7 @@
 |권소희|[15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609) |
 |변민정|[15721](https://www.acmicpc.net/problem/15721) |
 |아우신얀|[15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609) |
-|박다원||
+|박다원|[2460](https://www.acmicpc.net/problem/2460)|
 |이재훈||
 
 ## 문제 풀이 정리할 때 포함되어야 하는 내용들
