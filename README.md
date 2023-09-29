@@ -4,7 +4,6 @@
 <br/>
 
 ### 스터디원
-- [양재서](https://github.com/psychology50) : C++
 - [강병준](https://github.com/BangDori) : Python
 - [이진우](https://github.com/jinlee1703) : Java
 - [권소희](https://github.com/soooheeee) : Python
