@@ -12,43 +12,17 @@ public class BOJ2609 {
 		int n = Integer.parseInt(st.nextToken());
 		int m = Integer.parseInt(st.nextToken());
 		
-		int[] result;
-		
-		result = Calculator(n, m);
-		
-		System.out.println(result[0]);
-		System.out.println(result[1]);
-	}
-	
-	static int[] Calculator(int n, int m) {
-		int x = n;
-		int y = m;
-		int[] divisor = new int[100];
-		int[] result = {1, 1};
-		
-		int i = 1;
-		int j = 0;
-		
-		while (true) {
-			if (i > n || i > m || x < i || y < i) {
-				break;
-			}
-			if (x % i == 0 && y % i == 0) {
-				divisor[j] = i;
-				x = x/i;
-				y = y/i;
-				j++;
-			}
-			i++;
-		}
-		
-		for (int k = 0; k < j; k++) {
-			result[0] *= divisor[k];
-		}
-		
-		result[1] = result[0] * x * y;
-		
-		return result;
+		System.out.println(gcd(n,m));
+		System.out.println(n*m/gcd(n,m));
 	}
 
+	static int gcd(int a, int b) {
+		
+		while(b != 0) {
+			int r = a % b;
+			a = b;		
+			b = r;
+		}
+		return a;
+	}
 }
