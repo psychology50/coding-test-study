@@ -29,13 +29,13 @@
 ## 문제 풀이 현황
 |이름|문제|
 |:---:|:---|
-|강병준|[21608](https://www.acmicpc.net/problem/21608) [2054](https://www.acmicpc.net/problem/2504) [14500](https://www.acmicpc.net/problem/14500)|
-|이진우|[1790](https://www.acmicpc.net/problem/1790) |
-|권소희|[15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609) |
-|변민정|[15721](https://www.acmicpc.net/problem/15721) |
-|아우신얀|[15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609) |
-|박다원|[2460](https://www.acmicpc.net/problem/2460)|
-|이재훈||
+|강병준|[21608](https://www.acmicpc.net/problem/21608) [2054](https://www.acmicpc.net/problem/2504) [14500](https://www.acmicpc.net/problem/14500) [1074](https://www.acmicpc.net/problem/1074)|
+|이진우|[1790](https://www.acmicpc.net/problem/1790) [14719](https://www.acmicpc.net/problem/14719) [1052](https://www.acmicpc.net/problem/1052)|
+|권소희|[15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609) [10870](https://www.acmicpc.net/problem/10870) [1316](https://www.acmicpc.net/problem/1316) |
+|변민정|[15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609)  |
+|아우신얀|[15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609) [10870](https://www.acmicpc.net/problem/10870) [1316](https://www.acmicpc.net/problem/1316)|
+|박다원|[2460](https://www.acmicpc.net/problem/2460) [14467](https://www.acmicpc.net/problem/14467)|
+|이재훈|[2460](https://www.acmicpc.net/problem/2460)|
 
 ## 문제 풀이 정리할 때 포함되어야 하는 내용들
 - 풀기 전에 아이디어
