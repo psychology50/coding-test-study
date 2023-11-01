@@ -8,7 +8,7 @@ dy = [0, 0, 1, -1]
 row, col = map(int, input().split())
 table = [list(input().rstrip()) for _ in range(row)]
 
-def dfs():
+def bfs():
     visited = [[""] * col for _ in range(row)]
     queue = deque([(0, 0, table[0][0])])
 
@@ -29,5 +29,5 @@ def dfs():
                     queue.append((nx, ny, alphabets+table[nx][ny]))
     return count
 
-answer = dfs()
+answer = bfs()
 print(answer)
