@@ -9,3 +9,4 @@
 |9/20|[boj-14467](https://daxx0ne.tistory.com/204)|
 |9/26|[boj-2460](https://daxx0ne.tistory.com/206)|
 |10/08|[boj-2309](https://daxx0ne.tistory.com/207)|
+|11/06|[boj-20546](https://daxx0ne.tistory.com/208)|
