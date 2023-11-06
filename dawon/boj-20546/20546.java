@@ -5,6 +5,7 @@ public class 20546 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int money = Integer.parseInt(br.readLine());
+
         int[] price = new int[14];
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         for (int i = 0; i < 14; i++) {
