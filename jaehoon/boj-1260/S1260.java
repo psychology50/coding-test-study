@@ -19,27 +19,24 @@ public class S1260 {
 
 	}
 
-	public static void bfs(int start, int[][] matrix, int[] visited) {		
+	public static void bfs(int start, int[][] matrix, int[] visited) {
 		Queue<Integer> queue = new LinkedList<Integer>();
-        queue.offer(start);
-        visited[start] = 1;
 
-        System.out.print(start + " ");
+		visited[start] = 1;
+		queue.offer(start);
 
 		int vertex = visited.length - 1;
-        while(!queue.isEmpty()) {
-            int n = queue.poll();
+		while (!queue.isEmpty()) {
+			int n = queue.poll();
+			System.out.print(n + " ");
 
-			// 노드 하나로 연결된 노드 먼저 다 체크 
-            for(int i = 1; i <= vertex; i++) {
-           		 // 연결된 노드인데 방문하지 않은 경우 
-                if(matrix[n][i] == 1 && visited[i] == 0) {
-                    visited[i] = 1;
-                    System.out.print(i + " ");
-                    queue.offer(i);
-                }
-            }
-        } 
+			for (int i = 1; i <= vertex; i++) {
+				if (matrix[n][i] == 1 && visited[i] == 0) {
+					visited[i] = 1;
+					queue.offer(i);
+				}
+			}
+		}
 	}
 
 	public static void main(String[] args) {
@@ -68,7 +65,7 @@ public class S1260 {
 		bfs(start, adjacencyMatrix, visited);
 
 		sc.close();
-		
+
 	}
 
 }
