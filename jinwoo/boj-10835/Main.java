@@ -3,60 +3,59 @@ import java.io.*;
 
 public class Main {
     static int result = 0;
+    static int n;
+    static int[][] dp;
+    static int[] a, b;
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int n = Integer.parseInt(st.nextToken());
-        ArrayList<Integer> a = new ArrayList<>();
-        ArrayList<Integer> b = new ArrayList<>();
+        n = Integer.parseInt(st.nextToken());
+        dp = new int[n][n];
+
+        a = new int[n];
+        b = new int[n];
 
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
-            a.add(Integer.parseInt(st.nextToken()));
+            a[i] = Integer.parseInt(st.nextToken());
         }
 
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
-            b.add(Integer.parseInt(st.nextToken()));
+            b[i] = Integer.parseInt(st.nextToken());
         }
 
-        dfs(a, b, 0);
-        System.out.println(result);
+        for (int[] arr : dp) {
+            Arrays.fill(arr, -1);
+        }
+
+        System.err.println(recursion(0, 0));
+        br.close();
     }
 
-    public static void dfs(ArrayList<Integer> a, ArrayList<Integer> b, int value) {
-        if (a.isEmpty() || b.isEmpty()) {
-            result = Math.max(result, value);
-            return;
+    public static int recursion(int left, int right) {
+        // 기저사례: 왼쪽 카드 고갈 혹은 오른쪽 카드 고갈
+        if (left == n || right == n) {
+            return 0;
         }
 
-        // 두개 다 버리기
-        ArrayList<Integer> copy_a = new ArrayList<>();
-        ArrayList<Integer> copy_b = new ArrayList<>();
-        copy_a.addAll(a);
-        copy_b.addAll(b);
-        copy_a.remove(0);
-        copy_b.remove(0);
-        dfs(copy_a, copy_b, value);
-
-        // 왼쪽 버리기
-        copy_a = new ArrayList<>();
-        copy_b = new ArrayList<>();
-        copy_a.addAll(a);
-        copy_b.addAll(b);
-        copy_a.remove(0);
-        dfs(copy_a, copy_b, value);
-
-        // 오른쪽 버리기
-        copy_a = new ArrayList<>();
-        copy_b = new ArrayList<>();
-        copy_a.addAll(a);
-        copy_b.addAll(b);
-        if (copy_a.get(0) > copy_b.get(0)) {
-            int score = copy_b.remove(0);
-            dfs(copy_a, copy_b, value + score);
+        // DP - 이미 방문한 값은 캐싱
+        if (dp[left][right] != -1) {
+            return dp[left][right];
         }
+
+        dp[left][right] = 0;
+
+        int result1 = recursion(left + 1, right);
+        int result2 = recursion(left + 1, right + 1);
+
+        int result3 = 0;
+        if (a[left] > b[right]) {
+            result3 = b[right] + recursion(left, right + 1);
+        }
+
+        return dp[left][right] = Math.max(Math.max(result1, result2), result3);
     }
 }
