@@ -51,6 +51,6 @@
 
 - [D2_1948](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&contestProbId=AV5PnnU6AOsDFAUq): 날짜 계산기
 
-- [D2_1966](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&contestProbId=AV5PrmyKAWEDFAUq): 숫자를 정렬하자
+- [D2_1966](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&contestProbId=AV5PrmyKAWEDFAUq): 숫자를 정렬하자 (구글링)
 
 </details>
