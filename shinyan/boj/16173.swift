@@ -5,12 +5,12 @@ var map = [[Int]]()
 
 for _ in 0..<n {
     let map_size = readLine()!.split(separator: " ").map {Int($0)!} //게임 구역의 크기 만큼 mapsize 입력받기 
-    map.append(map_size)
+    map.append(map_size) //배열에 추가 시켜줌
 }
 
 var start = (0, 0)
 
-var visited = [[Bool]](repeating: [Bool](repeating: false, count:n), count:n)
+var visited = [[Bool]](repeating: [Bool](repeating: false, count:n), count:n) //2차원배열
 
 func dfs(_ x: Int,_ y: Int) { //구역의 크기가 2랑 3으로 밖에 제한적이지 않으니까 dfs사용함.
     visited[x][y] = true
