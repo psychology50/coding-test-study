@@ -2,4 +2,4 @@
 
 💻 아우신얀 블로그 주소 💻
 
-<https://velog.io/@yanni13>
+https://yanni13.tistory.com/
