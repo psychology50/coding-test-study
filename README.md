@@ -31,19 +31,6 @@
   - 코드 리뷰가 종료되었다고 판단되면 본인의 이슈는 직접 닫아주시면 됩니다.
 - 매주 대면으로 모이면 추가로 알려드려야 할 내용, 혹은 각자 풀었던 코드 설명하는 시간을 가집니다.
 
-## 문제 풀이 현황
-
-|   이름   | 문제                                                                                                                                                                                                                                 |
-| :------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  강병준  | [21608](https://www.acmicpc.net/problem/21608) [2054](https://www.acmicpc.net/problem/2504) [14500](https://www.acmicpc.net/problem/14500) [1074](https://www.acmicpc.net/problem/1074)                                              |
-|  이진우  | [1790](https://www.acmicpc.net/problem/1790) [14719](https://www.acmicpc.net/problem/14719) [1052](https://www.acmicpc.net/problem/1052)                                                                                             |
-|  권소희  | [15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609) [10870](https://www.acmicpc.net/problem/10870) [1316](https://www.acmicpc.net/problem/1316)                                              |
-|  변민정  | [15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609)                                                                                                                                          |
-| 아우신얀 | [15721](https://www.acmicpc.net/problem/15721) [2609](https://www.acmicpc.net/problem/2609) [10870](https://www.acmicpc.net/problem/10870) [1316](https://www.acmicpc.net/problem/1316)                                              |
-|  박다원  | [2460](https://www.acmicpc.net/problem/2460) [14467](https://www.acmicpc.net/problem/14467)                                                                                                                                          |
-|  이재훈  | [2460](https://www.acmicpc.net/problem/2460)                                                                                                                                                                                         |
-|  윤강록  | [1316](https://www.acmicpc.net/problem/1316) [3040](https://www.acmicpc.net/problem/3040) [1292](https://www.acmicpc.net/problem/1292) [20546](https://www.acmicpc.net/problem/20546) [14467](https://www.acmicpc.net/problem/14467) |
-
 ## 문제 풀이 정리할 때 포함되어야 하는 내용들
 
 - 풀기 전에 아이디어
